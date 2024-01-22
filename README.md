@@ -48,7 +48,7 @@ cd Fac-Juridico
 ## Run the following command to start the application:
 
 ```
-docker-compose up -d
+docker-compose up --build
 ```
 
 This will build and start the containers in the background.
