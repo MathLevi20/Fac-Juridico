@@ -5,8 +5,25 @@
 - [Usage](#usage)
 - [Configuration](#configuration)
 
-## Installation
 
+## Technologies Used
+
+- React (TypeScript)
+- Tailwind CSS
+- Express
+- Node.js
+- PostgreSQL
+- Docker
+- Docker Compose
+- JavaScript
+
+## Prerequisites
+
+- Node.js (v14+)
+- Docker
+- Docker Compose
+
+## Installation
 ### Docker Compose
 
 [Docker Compose](https://docs.docker.com/compose/) is a tool for defining and running multi-container Docker applications. To install Docker Compose, follow these steps:
