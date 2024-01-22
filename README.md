@@ -73,11 +73,13 @@ docker-compose down
 ### Docker Compose File
 
 The docker-compose.yml file in your project defines the services, networks, and configurations for your application. The example configuration includes three services: frontend, backend, and database.
+```
 
 frontend: Build and run the frontend application, exposed on port 3000.
 backend: Build and run the backend application, exposed on port 5000.
 database: Use the official PostgreSQL image, exposed on port 6000.
 Adjust the configuration according to your project's requirements.
+```
 
 ## Environment Variables
 
