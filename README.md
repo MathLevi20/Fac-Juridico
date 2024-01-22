@@ -35,32 +35,47 @@ Download the installer from the Docker Compose GitHub releases page and follow t
 ```
 
 ## Verify the installation by running
+```
 
 bash
+
 docker-compose --version
-Usage
+```
+
+## Usage
 Clone the repository containing your Docker Compose configuration:
+
+```
 
 bash
 git clone <https://github.com/MathLevi20/Fac-Juridico.git>
 cd Fac-Juridico
+```
 
-Run the following command to start the application:
+## Run the following command to start the application:
+```
 
 bash
 docker-compose up -d
+```
+
 This will build and start the containers in the background.
 
-Access your application in a web browser:
+**Access your application in a web browser:**
+```
+bash
 
 Frontend: <http://localhost:3000>
 Backend: <http://localhost:5000>
 Database: <http://localhost:6000>
+```
 
 To stop the application, run:
+```
 
 bash
 docker-compose down
+```
 
 ## Configuration
 
