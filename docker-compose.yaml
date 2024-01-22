@@ -23,7 +23,7 @@ services:
     depends_on:
       - database
     environment:
-      DATABASE_HOST: database  # Use o nome do serviço do banco de dados como host
+      DATABASE_HOST: database 
       DATABASE_PORT: 5432
       DATABASE_NAME: postgres
       DATABASE_USER: postgres
