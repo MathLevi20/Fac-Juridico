@@ -62,3 +62,42 @@
   {
     "message": "Customer deleted successfully."
   }
+
+## Calcular a Rota Ótima
+
+- **Rota:** `POST /api/calculate-route`
+- **Descrição:** Calcula a rota ótima para visitar todos os clientes.
+- **Resposta de Sucesso (200):**
+  ```json
+    {
+    "visitOrder": [
+        {
+        "id": 0,
+        "name": "Company A",
+        "coord_x": 0,
+        "coord_y": 0
+        },
+        {
+        "id": 1,
+        "name": "MATHEUS LEVI DA SILVA BARBOSA",
+        "email": "matheuslevi@gmail.com",
+        "phone": "+55 11 98765-4321",
+        "coord_x": 15,
+        "coord_y": 10
+        },
+        {
+        "id": 2,
+        "name": "Maria Eduarda",
+        "email": "mariaeduarda@gmail.com",
+        "phone": "+55 11 98765-6789",
+        "coord_x": 20,
+        "coord_y": 15
+        },
+        {
+        "id": 0,
+        "name": "Company B",
+        "coord_x": 0,
+        "coord_y": 0
+        }
+    ]
+    }
