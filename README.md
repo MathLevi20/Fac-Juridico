@@ -41,7 +41,7 @@ docker-compose --version
 Clone the repository containing your Docker Compose configuration:
 
 ```
-git clone <https://github.com/MathLevi20/Fac-Juridico.git>
+git clone https://github.com/MathLevi20/Fac-Juridico.git
 cd Fac-Juridico
 ```
 
@@ -56,9 +56,9 @@ This will build and start the containers in the background.
 **Access your application in a web browser:**
 ```
 
-Frontend: <http://localhost:3000>
-Backend: <http://localhost:5000>
-Database: <http://localhost:6000>
+Frontend: http://localhost:3000
+Backend: http://localhost:5000
+Database: http://localhost:6000
 ```
 
 To stop the application, run:
