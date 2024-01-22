@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  frontend:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    networks:
+      - my-network
+
+  backend:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - my-network
+    depends_on:
+      - database
+    environment:
+      DATABASE_HOST: database  # Use o nome do serviço do banco de dados como host
+      DATABASE_PORT: 5432
+      DATABASE_NAME: postgres
+      DATABASE_USER: postgres
+      DATABASE_PASSWORD: 1234
+
+  database:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: postgres
+      POSTGRES_USER: postgres
+      POSTGRES_SSL: off
+    networks:
+      - my-network
+    ports:
+      - "6000:5432"
+    restart: always
+
+networks:
+  my-network:
+    driver: bridge
