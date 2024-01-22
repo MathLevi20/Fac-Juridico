@@ -1,4 +1,5 @@
 import pkg from 'pg';
+import { populateDatabase } from '../db/populateDatabase.js';
 const { Pool } = pkg;
 
 const connectionString = 'postgres://postgres:1234@database:5432/postgres';
@@ -52,11 +53,11 @@ export async function main() {
 
     if (!tableAlreadyExists) {
       await createTable();
+      await populateDatabase();
     }
   } catch (error) {
     console.error('Error during initialization:', error);
     process.exit(1); // Exits the Node.js process in case of an error
   }
 }
-
 export default pool;

@@ -1,7 +1,7 @@
 // populateDatabase.mjs
 import pool from '../config/database.js';
 
-async function populateDatabase() {
+export async function populateDatabase() {
   try {
     // Insert dummy data into the customers table
     await pool.query(`
@@ -16,11 +16,7 @@ async function populateDatabase() {
   } catch (error) {
     console.error('Error populating the database:', error);
     throw error;
-  } finally {
-    // Make sure to close the database connection after execution
-    await pool.end();
-  }
+  } 
 }
 
 // Call the function to populate the database
-populateDatabase();

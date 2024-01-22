@@ -17,7 +17,6 @@ COPY . .
 EXPOSE 5000
 
 # Comando para iniciar o aplicativo quando o contêiner for iniciado
-CMD ["node", "/app/db/populateDatabase.js"]
 
 CMD ["npm", "start"]
 
