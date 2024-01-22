@@ -13,7 +13,7 @@
 
 **Linux:**
 
-```bash
+```
 sudo curl -L "https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
@@ -21,23 +21,18 @@ sudo chmod +x /usr/local/bin/docker-compose
 **macOS:**
 
 ```
-
-bash
 brew install docker-compose
 ```
 
 **Windows:**
 
 ```
-
-
 Download the installer from the Docker Compose GitHub releases page and follow the installation instructions.
 ```
 
 ## Verify the installation by running
-```
 
-bash
+```
 
 docker-compose --version
 ```
@@ -46,35 +41,31 @@ docker-compose --version
 Clone the repository containing your Docker Compose configuration:
 
 ```
-
-bash
 git clone <https://github.com/MathLevi20/Fac-Juridico.git>
 cd Fac-Juridico
 ```
 
 ## Run the following command to start the application:
-```
 
-bash
+```
 docker-compose up -d
 ```
 
 This will build and start the containers in the background.
 
 **Access your application in a web browser:**
-```
-bash
+``
 
 Frontend: <http://localhost:3000>
 Backend: <http://localhost:5000>
 Database: <http://localhost:6000>
-```
 
+```
 To stop the application, run:
 ```
 
-bash
 docker-compose down
+
 ```
 
 ## Configuration
