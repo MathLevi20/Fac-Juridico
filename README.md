@@ -54,12 +54,12 @@ docker-compose up -d
 This will build and start the containers in the background.
 
 **Access your application in a web browser:**
-``
+```
 
 Frontend: <http://localhost:3000>
 Backend: <http://localhost:5000>
 Database: <http://localhost:6000>
-
+```
 
 To stop the application, run:
 ```
